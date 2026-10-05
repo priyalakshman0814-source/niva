@@ -5,4 +5,10 @@ import App from './App'
 import './styles/base.css'
 import './styles/sections.css'
 import './styles/premium.css'
-createRoot(document.getElementById('root')!).render(<React.StrictMode><BrowserRouter><App /></BrowserRouter></React.StrictMode>)
+createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <BrowserRouter basename="/niva">
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+)
